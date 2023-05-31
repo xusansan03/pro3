@@ -1,0 +1,438 @@
+*{
+	padding:0px;
+	margin:0px;
+	font-family:"微软雅黑 Light";}
+body{
+	margin-bottom: 0px;
+    text-align: center;
+	background-image: url(https://i1.wp.com/popbee.com/image/2018/10/Warner-Bros-hollywood-version-Attack-on-Titan-Andy-Muschietti-to-Direct-1.jpg?quality=95&);
+    background-position: center 80%;
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 0px;}
+/*导航*/
+.nav{
+	width:100%;
+	height:50px;
+	background:rgba(0,0,0,0.5);	}
+.nav li{
+	float:left;
+	margin-left:25px;
+	margin-right:25px;
+	margin-top:5px;
+	list-style:none;}
+.nav li a{
+	font-size:22px;
+	color:#CCC;
+	line-height:2em;
+	text-decoration:none;
+	display:block;}
+.nav li a:hover{
+	color:#0068af;}
+	
+	
+	
+.nav li > a{
+	display:block;
+	line-height:40px;
+	padding:0px 18px;}
+.nav li > a:hover{
+	line-height:38px;}
+.nav li .down{
+	width:100px;
+	position:absolute;
+	left:1283px;
+	top:40px;
+	display:none;}
+.nav li .down a{
+	display:block;
+	line-height:36px;
+	font-size:14px;
+	color:#fff;
+	font-family:"微软雅黑 Light";}
+.nav li:hover .down{
+	display:block;}
+.nav li .down a:hover{
+	background-color:#C30;}
+/*透明背景*/
+.tm{
+	position:relative;}
+.tm h1{
+	color:#FFFFFF;
+	display:block;
+	width:400px;
+	height:100px;
+	text-align:center;
+	line-height:100px;
+	font-size:70px;
+	margin-left:500px;
+	margin-top:250px;;
+	position:absolute;
+	background:rgba(0,0,0,0.5);}
+.tm .box1{
+	background:#CC0000;
+	width:100px;
+	height:5px;
+	margin-left:650px;
+	margin-top:450px;
+	position:absolute;
+	border-radius:5px;}
+.tm h6{
+	display:block;
+	width:100%;
+	height:20px;
+	color:#FFFFFF;
+	margin-left:0px;
+	margin-top:470px;
+	font-size:18px;
+	opacity:0.8;}
+/*引言*/
+.yinyan{
+	background:#CC3300;
+	width:100%;
+	height:600px;
+	margin-top:430px;}	
+/*引言角色翻页*/
+.yinyan .box2 img{
+ width:260px;
+ height:450px;
+ margin-top:70px;
+ box-shadow:1px 4px 5px rgba(0,0,0,0.2);}
+.yinyan .box2 ul{
+ list-style:none;
+ width:208px;
+ height:450px;
+ margin-top:80px;
+ margin-left:200px;
+ transform-style:preserve-3d;
+ perspective:900px;
+ transition:5s;}
+.yinyan .box2 ul:hover{
+ transform:translateX(150px);}
+.yinyan .box2 li{
+ position:absolute;
+ transform-origin:left;}
+.yinyan .box2 li:nth-child(1){
+ transform:rotateY(-33deg);
+ transition:4.9s;}
+.yinyan .box2 li:nth-child(2){
+ transform:rotateY(-31deg);
+ transition:4.6s;}
+.yinyan .box2 li:nth-child(3){
+ transform:rotateY(-29deg);
+ transition:4.3s;}
+.yinyan .box2 li:nth-child(4){
+ transform:rotateY(-27deg);
+ transition:4s;}
+.yinyan .box2 li:nth-child(5){
+ transform:rotateY(-25deg);
+ transition:3.7s;}
+.yinyan .box2 li:nth-child(6){
+ transform:rotateY(-23deg);
+ transition:3.4s;}
+.yinyan .box2 li:nth-child(7){
+ transform:rotateY(-21deg);
+ transition:2.9s;}
+.yinyan .box2 li:nth-child(8){
+ transform:rotateY(-19deg);
+ transition:2.6s;}
+.yinyan .box2 li:nth-child(9){
+ transform:rotateY(-17deg);
+ transition:2.3s;}
+.yinyan .box2 li:nth-child(10){
+ transform:rotateY(-15deg);
+ transition:2s;}
+.yinyan .box2 ul:hover li:nth-child(1){
+ transform:rotateY(-180deg);
+ transition:5s;}
+.yinyan .box2 ul:hover li:nth-child(2){
+ transform:rotateY(-180deg);
+ transition:6s;}
+.yinyan .box2 ul:hover li:nth-child(3){
+ transform:rotateY(-180deg);
+ transition:7s;}
+.yinyan .box2 ul:hover li:nth-child(4){
+ transform:rotateY(-180deg);
+ transition:8s;}
+.yinyan .box2 ul:hover li:nth-child(5){
+ transform:rotateY(-180deg);
+ transition:9s;}
+.yinyan .box2 ul:hover li:nth-child(6){
+ transform:rotateY(-180deg);
+ transition:10s;}
+.yinyan .box2 ul:hover li:nth-child(7){
+ transform:rotateY(-180deg);
+ transition:11s;}
+.yinyan .box2 ul:hover li:nth-child(8){
+ transform:rotateY(-180deg);
+ transition:12s;}
+.yinyan .box2 ul:hover li:nth-child(9){
+ transform:rotateY(-180deg);
+ transition:13s;}
+/*引言旁边的引言*/
+.yinyan h5{
+	position:absolute;
+	text-align:left;
+	display:block;
+	width:500px;
+	height:200px;
+	font-size:20px;
+	color:#FFFFFF;
+	opacity:0.6;
+	margin-left:750px;
+	margin-top:80px;
+	line-height:1.9em;}
+/*角色*/
+.juese{
+	background:#FFFFFF;
+	width:100%;
+	height:700px;}
+ /*角色人物轮播*/
+.juese ul{
+	 list-style:none;}
+.juese .banner{
+	width:790px; 
+	height:340px; 
+	border:5px solid #000; 
+	margin:100px auto; 
+	position:relative;}
+
+.juese .pic li{ 
+	position:absolute; 
+	top:0; left:0; 
+	display:none;}
+
+
+.juese .num{ 
+	position:absolute; 
+	bottom:16px; left:50%; 
+	font-size:0; text-align:center; 
+	background:rgba(255,255,255,0.6); 
+	padding:4px; 
+	border-radius:10px;}
+
+.juese .num li{ 
+	width:12px; 
+	height:12px; 
+	background:#fff; 
+	border-radius:50%; 
+	display:inline-block; 
+	margin:0 5px; 
+	cursor:pointer;}
+.juese .num li.active{ 
+	background:#c00;}
+
+
+.juese .btn{ 
+	width:30px; 
+	height:60px; 
+	background:rgba(0,0,0,0.5); 
+	font-size:20px; 
+	position:absolute; 
+	top:50%; 
+	margin-top:-30px; 
+	color:#fff; 
+	text-align:center; 
+	line-height:60px; 
+	cursor:pointer; 
+	display:none;}
+
+.juese .btn:hover{ 
+	background:rgba(0,0,0,0.7);}
+
+.juese .btnLeft{ 
+	left:0;}
+.juese .btnRight{ 
+	right:0;}
+
+.juese .banner:hover .btn{ 
+	display:block;}
+/*装置*/
+.zhuangzhi{
+	background:#a8805d;
+	width:100%;
+	height:500px;}
+.zhuangzhi video{
+	float:left;
+	margin:50px;
+	margin-top:100px;}
+.zhuangzhi .zz2{
+	color:#FFFFFF;
+	padding:15px;
+	margin-right:200px;
+	margin-top:30px;
+	width:500px;
+	height:40px;
+	float:right;
+	border-bottom:2px solid #FFFFFF;}
+.zhuangzhi img{
+	width:500px;
+	height:100px;
+	background:#f30;
+	margin:100px;
+	transition:2s;
+	float:left;
+	margin-top:50px;
+	margin-left:110px;}
+.zhuangzhi:hover img{
+	transform:scale(1.2,1.2)}
+.zhuangzhi p{
+	display:block;
+	width:500px;
+	height:200px;
+	float:right;
+	margin-right:200px;
+	margin-top:-50px;
+	font-size:20px;
+	color:#FFFFFF;
+	opacity:0.8;
+	line-height:1.5em;}
+/*兵团*/
+.bingtuan{
+	position:relative;
+	width:100%;
+	height:850px;
+	background:#FFFFFF;}
+.bingtuan h1{
+	float:left;
+	display:block;
+	margin-top:50px;
+	margin-left:200px;}
+.bingtuan h2{
+	display:block;
+	margin-top:10px;}
+.bingtuan h3{
+	display:block;
+	margin-top:7px;
+	opacity:0.6;}
+.bingtuan .bt1 img{
+	width:1000px;;
+	height:100px;
+	background:#f30;
+	margin:100px;
+	transition:2s;
+	float:left;
+	margin-top:15px;
+	margin-left:-100px;}
+.bingtuan:hover .bt1 img{
+	transform:scale(1.2,1.2)}
+.bingtuan .bt2{
+	margin-top:-100px;
+	margin-left:100px;
+	float:left;
+	width:1200px;;
+	height:1px;
+	background-color:black;
+	opacity:0.4;}
+	
+	
+.bingtuan .xbt{
+	position:absolute;
+	width:275px;
+	height:600px;
+	float:left;
+	margin-top:200px;
+	margin-left:80px;}
+.bingtuan .xbt img{
+	width:275px;
+	height:300px;}
+.bingtuan .xbt p{
+	display:block;
+	margin-top:7px;
+	opacity:0;}
+.bingtuan .xbt:hover p{
+	transition:1s;
+	opacity:0.6;
+	line-height:1.5em;
+	transform: scale(1,1.05)}
+	
+	
+.bingtuan .dcbt{
+	position:absolute;
+	width:275px;
+	height:600px;
+	float:left;
+	margin-top:200px;
+	margin-left:405px;}
+.bingtuan .dcbt img{
+	width:275px;
+	height:300px;}
+.bingtuan .dcbt p{
+	display:block;
+	margin-top:7px;
+	opacity:0;}
+.bingtuan .dcbt:hover p{
+	transition:1s;
+	opacity:0.6;
+	line-height:1.5em;
+	transform: scale(1,1.05)}
+	
+	
+.bingtuan .zzbt{
+	position:absolute;
+	width:275px;
+	height:600px;
+	float:left;
+	margin-top:200px;
+	margin-left:730px;}
+.bingtuan .zzbt img{
+	width:275px;
+	height:300px;}
+.bingtuan .zzbt p{
+	display:block;
+	margin-top:7px;
+	opacity:0;}
+.bingtuan .zzbt:hover p{
+	transition:1s;
+	opacity:0.6;
+	line-height:1.5em;
+	transform: scale(1,1.05)}
+	
+	
+.bingtuan .xlbt{
+	position:absolute;
+	width:275px;
+	height:600px;
+	float:left;
+	margin-top:200px;
+	margin-left:1055px;}
+.bingtuan .xlbt img{
+	width:275px;
+	height:300px;}
+.bingtuan .xlbt p{
+	display:block;
+	margin-top:7px;
+	opacity:0;}
+.bingtuan .xlbt:hover p{
+	transition:1s;
+	opacity:0.6;
+	line-height:1.5em;
+	transform: scale(1,1.05)}
+/*脚本*/
+.footer{
+	height:800px;
+	width:100%;
+	background-image: url(../img/footer.bg.jpg);
+	background-position: center 80%;
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 0px;}
+.footer .ft1{
+	background:rgba(0,0,0,0.5);
+	font-size:40px;
+	float:left;
+	padding:10px;
+	margin-left:430px;
+	margin-top:600px;
+	border-radius:40px;}
+.footer .ft1 h1{
+	color:#FFFFFF;
+	opacity:0.8;}
+.footer:hover .ft1{
+	transition:1.5s;
+	transform: scale(1.2,1.2);
+	box-shadow:0px 10px 10px 0 rgba(0,0,0,0.8) inset,10px 10px 10px 0 rgba(0,0,0,0.8);}
+	
+	
+
+

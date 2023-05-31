@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>进击的巨人</title>
+<script src="JS/juren.js"></script>
+<script>
+
+$(function(){
+	//初始化
+	var size=$(".pic li").length;	
+	for(var i=0;i<size; i++){
+		$(".num").append("<li></li>")	
+	}
+	
+	var numWidth=$(".num").outerWidth()/2;
+	$(".num").css("margin-left",-numWidth);
+	
+	$(".pic li").eq(0).show();
+	$(".num li").eq(0).addClass("active");
+	//手动控制轮播
+	$(".num li").mouseover(function(){
+		$(this).addClass("active").siblings().removeClass("active");
+		var idx=$(this).index();
+		i=idx;
+		$(".pic li").eq(idx).fadeIn().siblings().fadeOut();
+	})
+	//自动轮播器
+	var i=0;
+	var t=setInterval(move,2000);
+	//鼠标滑动到轮播器,自动停掉动画
+	$(".banner").hover(function(){
+		clearInterval(t)
+	},function(){
+		t=setInterval(move,2000);
+	})
+	//点击向左的箭头
+	$(".btnLeft").click(function(){
+		moveLeft()	
+	})
+	//点击向右的箭头
+	$(".btnRight").click(function(){
+		move()	
+	})
+	//向左运动动画函数
+	function moveLeft(){		
+		i--;
+		if(i==-1){
+			i=size-1;	
+		}
+		$(".pic li").eq(i).fadeIn().siblings().fadeOut();
+		$(".num li").eq(i).addClass("active").siblings().removeClass("active");
+		
+	}
+	//向右运动动画函数
+	function move(){		
+		i++;
+		if(i>=size){
+			i=0;	
+		}
+		$(".pic li").eq(i).fadeIn().siblings().fadeOut();
+		$(".num li").eq(i).addClass("active").siblings().removeClass("active");
+		
+	}
+	
+	
+		
+})
+</script>
+<link rel="stylesheet" type="text/css" href="css/style1.css"/>
+
+</head>
+
+<body>
+<div class="nav">
+	<ul>
+    	<li style="margin-left:50px;"><a href="html/top视频.html" target="_blank">TOP</a></li>
+        <li style="float:right; margin-right:50px;">
+        	<a href="#d">兵团</a>
+            <div class="down" style="text-align:center">
+            	<a href="#">宪兵团</a>
+                <a href="#">调查兵团</a>
+                <a href="#">驻扎兵团</a>
+                <a href="#">训练兵团</a>
+            </div>  
+        </li>
+        <li style="float:right;"><a href="#c">装置</a></li>
+        <li style="float:right;">
+        	<a href="#b">角色</a>
+            <div class="down" style="text-align:center; left:1023px;">
+            	<a href="#">艾伦</a>
+                <a href="#">三笠</a>
+                <a href="#">阿明</a>
+                <a href="#">利威尔</a>
+                <a href="#">韩吉</a>
+                <a href="#">埃尔文</a>
+                <a href="#">莱纳</a>
+                <a href="#">尤弥尔</a>
+                <a href="#">希斯特里亚</a>
+            </div>  
+        </li>
+        <li style="float:right;"><a href="#a">引言</a></li>
+    </ul>
+</div>
+
+<div class="tm">
+	<h1 data-0="transform: translateY(-50px)" data-500="transform: translateY(130px)">進擊的巨人</h1>
+    <hr/>
+    <div class="box1"></div>
+    <h6>面对高大的巨人,你的决定是</h6>
+</div>
+
+<div class="yinyan">
+	<a name="a"></a>
+	<h5>在故事开始前的100年,巨大的人类生物「&nbsp;巨人&nbsp;」突然出现,毫无理由的消灭大半人类,残余的人类建造了三道同心圆高墙。最外围的是「&nbsp;玛丽娅之墙&nbsp;」,中间是「&nbsp;罗塞之墙&nbsp;」,最内侧的是「&nbsp;希纳之墙&nbsp;」,人类怀抱着摇摇欲坠的和平,居住在墙内百年之久。许多人在墙内出生长大,不曾见过巨人。<br /><br />
+    这一切在某一天起了变化,一个60公尺的超大型巨人突袭并破坏了希干希纳区的城门,而另一个全身穿上铠甲的铠甲巨人则打碎了玛莉亚之墙的城门,让一大群巨人进入该区...
+    </h5>
+	<div class="box2">
+		<ul>
+     		<li><img src="img/1.jpg" /></li>
+        	<li><img src="img/2.jpg" /></li>
+        	<li><img src="img/3.jpg"/></li>
+        	<li><img src="img/4.jpg"/></li>
+        	<li><img src="img/5.jpg"/></li>
+        	<li><img src="img/6.jpg"/></li>
+            <li><img src="img/7.jpg"/></li>
+            <li><img src="img/8.jpg"/></li>
+        	<li><img src="img/9.jpg"></li>
+        	<li><img src="img/10.jpg"/></li>
+    	</ul> 
+    </div>
+</div>
+
+<div class="juese">
+	<a name="b"></a>
+	<br /><h1>角色介绍</h1><br /><br /><hr />
+    <div class="banner">
+	<ul class="pic">
+    	<li><a href="https://www.bilibili.com/video/BV1CT411k7LB/?spm_id_from=333.337.search-card.all.click&v" target="_blank"><img src="img/轮播1.jpg"/></a></li>
+        <li><a href="https://www.bilibili.com/video/BV1Ne4y1K79X/?spm_id_from=333.337.search-card.all.click&vd_source=07fd6a1a2d2b8d48b617eafe878bc269" target="_blank"><img src="img/轮播2.jpg"/></a></li>
+        <li><a href="https://www.bilibili.com/video/BV1n54y1b7fk/?spm_id_from=333.337.search-card.all.click&vd_source=07fd6a1a2d2b8d48b617eafe878bc269" target="_blank"><img src="img/轮播3.jpg"/></a></li>
+        <li><a href="https://www.bilibili.com/video/BV11o4y1w7tP/?spm_id_from=333.788&vd_source=07fd6a1a2d2b8d48b617eafe878bc269" target="_blank"><img src="img/轮播4.jpg"/></a></li>
+        <li><a href="https://www.bilibili.com/video/BV1t24y1g7wx/?spm_id_from=333.337.search-card.all.click&vd_source=07fd6a1a2d2b8d48b617eafe878bc269" target="_blank"><img src="img/轮播5.jpg"/></a></li>
+        <li><a href="https://www.bilibili.com/video/BV1mM4y1C7JJ/?spm_id_from=333.337.search-card.all.click&vd_source=07fd6a1a2d2b8d48b617eafe878bc269"><img src="img/轮播6.jpg" /></a></li>
+        <li><a href="https://www.bilibili.com/video/BV1pV411C7qN/?spm_id_from=333.337.search-card.all.click&vd_source=07fd6a1a2d2b8d48b617eafe878bc269"><img src="img/轮播7.jpg" /></a></li>
+        <li><a href="https://www.bilibili.com/video/BV1jx411Z7wY/?spm_id_from=333.337.search-card.all.click&vd_source=07fd6a1a2d2b8d48b617eafe878bc269"><img src="img/轮播8.jpg" /></a></li>
+        <li><a href="https://www.bilibili.com/video/BV1cW41167jk/?spm_id_from=333.337.search-card.all.click&vd_source=07fd6a1a2d2b8d48b617eafe878bc269"><img src="img/轮播9.jpg" /></a></li>
+    </ul>
+    <ul class="num"></ul>
+    <div class="btn btnLeft">&lt;</div>
+    <div class="btn btnRight">&gt;</div>
+	</div>
+</div>
+
+<div class="zhuangzhi">
+	<a name="c"></a>
+	<video src="video/立体机动装置.mp4" controls="controls" style="width:500px; height:400px; float:left; margin:50px; margin-top:50px;">
+    </video>
+    <div class="zz2">
+    	<h1>立体机动装置</h1>
+    </div>
+    <div class="zz3"><img src="img/装置图1.png" /></div>
+    <p>立体机动装置,《进击的巨人》中的武器。<br />
+    立体机动装置是人类军队的装备之一,是为了让习惯于二维方向运动的人向三维运动发展的机械。<br />			    借助于此装置,人类军队才能有效地击中巨人的后颈肉。</p>
+</div>
+
+<div class="bingtuan">
+	<a name="d"></a>
+	<div class="bt1">
+    	<img src="img/兵团介绍.png" />
+    </div>
+    <div class="bt2"></div>
+    <div class="xbt">
+    	<img src="img/宪兵团.jpg" />
+        <h2>宪兵团</h2>
+        <h3>[执法独角]</h3>
+        <p>是一个在国王身边管理人民、维持秩序的兵团。在这个年度的训练兵团裡成绩前10名的人可以自愿加入。而在驻扎兵团累积不少经验的士兵也可申请转调。主要的任务是管理训练兵团以及监视驻扎军团,还有负责消防方面的指挥统驭。在性质上跟当初以民主方式成立的调查军团很容易产生对立。</p>
+    </div>
+    <div class="dcbt">
+    	<img src="img/调查兵团.jpg" />
+        <h2>调查兵团</h2>
+        <h3>[自由之翼]</h3>
+        <p>走出城牆外,正面挑战巨人的部队。死亡率最高,兵力耗损最多。但因为长期和巨人作战,战斗经验也最为丰富。主要目的虽然是负责城牆以外的搜索行动,不过在玛利亚之牆被攻陷以前以及之后,活动内容有些不一样。</p>
+    </div> 
+    <div class="zzbt">
+    	<img src="img/驻扎兵团.jpg" />
+        <h2>驻扎兵团</h2>
+        <h3>[镇守蔷薇]</h3>
+        <p>负责强化城牆、牆内地区驻守任务的部队。在巨人出现以前,主要工作是牆的修理与维护。总兵力约有4万人,佔全兵团裡最多主力。</p>
+    </div> 
+    <div class="xlbt">
+    	<img src="img/训练兵团.jpg" />
+        <h2>训练兵团</h2>
+        <h3>[讨伐之剑]</h3>
+        <p>在正式配属前的训练生所待的兵团,在此接受各种训练。在巨人入侵城牆时,也会有和其他兵团互相合作展开作战行动的状况。</p>
+    </div>    
+</div>
+
+<div class="footer">
+	<div class="ft2">
+		<audio controls="controls" style=" display:block; margin-left:20px;
+        opacity:0.5;">
+    		<source src="video/心臓を捧げよう.m4a" />
+    	</audio>
+    </div>
+	<div class="ft1">
+    	<h1>心臓を捧げよう</h1>
+    </div>
+</div>
+</div>
+</body>
+</html>
